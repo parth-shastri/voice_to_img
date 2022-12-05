@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-family:verdana;">VOICE TO IMAGE</h1>
+
+<p style="font-size:20px;"> Using Stable-diffusion and whisper.</p>
+<hr>
+
+<form action="/upload/" enctype="multipart/form-data" method="post">
+      <label for="lang">Select your Language: &nbsp&nbsp</label>
+      <br><br>
+      <select name="languages" id="lang">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="java">Java</option>
+        <option value="golang">Golang</option>
+        <option value="python">Python</option>
+        <option value="c#">C#</option>
+        <option value="C++">C++</option>
+        <option value="erlang">Erlang</option>
+      </select>
+      <br><br>
+      <label for="file">Upload an audio file Prompt (< 30s, .wav encoding):</label>
+      <br><br>
+      <input type="file" id="myFile" name="filename">
+      <br><br>
+      <hr>
+      <input type="submit" value="Generate an image" />
+</form>
+ 
+</body>
+</html>
