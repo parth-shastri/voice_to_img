@@ -83,8 +83,8 @@ def generate_img(
     prompt = transcription[0]
     pipeline.enable_attention_slicing()
     sd_pipeline = pipeline.to(DEVICE)
-    # image = sd_pipeline(prompt, height=512, width=512).images[0]
-    # image.save("data/response_artifact.png")
+    image = sd_pipeline(prompt, height=512, width=512).images[0]
+    image.save("data/response_artifact.png")
 
     return {"prompt": prompt}
 
